@@ -87,7 +87,22 @@ export function getCategoryColor(category: string): string {
     case 'performance': return 'bg-orange-100 text-orange-700';
     case 'ux': return 'bg-purple-100 text-purple-700';
     case 'marketing': return 'bg-green-100 text-green-700';
+    case 'business_tools': return 'bg-indigo-100 text-indigo-700';
+    case 'accessibility': return 'bg-teal-100 text-teal-700';
     default: return 'bg-slate-100 text-slate-600';
+  }
+}
+
+export function getCategoryLabel(category: string): string {
+  switch (category) {
+    case 'seo': return 'SEO';
+    case 'security': return 'Security';
+    case 'performance': return 'Performance';
+    case 'ux': return 'UX';
+    case 'marketing': return 'Marketing';
+    case 'business_tools': return 'Business Tools';
+    case 'accessibility': return 'Accessibility';
+    default: return category;
   }
 }
 

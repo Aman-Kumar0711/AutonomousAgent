@@ -1,7 +1,7 @@
 export interface Issue {
   issue: string;
   impact: 'high' | 'medium' | 'low';
-  category: 'seo' | 'security' | 'performance' | 'ux' | 'marketing';
+  category: 'seo' | 'security' | 'performance' | 'ux' | 'marketing' | 'business_tools' | 'accessibility';
   description: string;
   recommendation: string;
   business_impact: string;

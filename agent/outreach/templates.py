@@ -78,6 +78,19 @@ I came across <strong>{{ business_name }}</strong>{% if business_city %} in {{ b
 I'm a web developer and I took a quick look at your website. I noticed a few things that might be costing you customers:
 </p>
 
+{% if solution_issues %}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;background:#eff6ff;border-radius:8px;border-left:4px solid #2563eb;">
+<tr><td style="padding:16px 20px;">
+<p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#1e40af;">🚀 Growth Opportunities — Things I Can Build For You:</p>
+{% for issue in solution_issues %}
+<p style="margin:0 0 6px 0;font-size:13px;color:#1e3a5f;line-height:1.5;">
+<strong>• {{ issue.issue }}:</strong> {{ issue.business_impact }}
+</p>
+{% endfor %}
+</td></tr>
+</table>
+{% endif %}
+
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
 {% for issue in top_issues %}
 <tr>
@@ -109,7 +122,7 @@ Your website scored <strong>{{ overall_score }}/100</strong> in my audit. I've p
 </table>
 
 <p style="margin:0 0 16px 0;font-size:15px;color:#374151;line-height:1.6;">
-I can fix all of these issues for you — I build custom solutions based on exactly what each business needs. No cookie-cutter packages, just the stuff that'll actually bring you more customers.
+I don't just fix technical issues — I build complete solutions like chatbots, booking systems, payment portals, and automated reminders tailored to your business. No cookie-cutter packages, just the stuff that'll actually bring you more customers.
 </p>
 
 <p style="margin:0 0 16px 0;font-size:15px;color:#374151;line-height:1.6;">
@@ -240,6 +253,10 @@ def render_initial_outreach(
     sender_email: str,
 ) -> tuple[str, str]:
     domain_label = DOMAIN_LABELS.get(domain or "other", "local")
+
+    solution_issues = [i for i in top_issues if i.get("category") == "business_tools"][:3]
+    technical_issues = [i for i in top_issues if i.get("category") != "business_tools"][:3]
+
     subject = SUBJECT_INITIAL.render(
         business_name=business_name,
         issue_count=len(top_issues),
@@ -251,7 +268,8 @@ def render_initial_outreach(
         domain_label=domain_label,
         rating=rating,
         review_count=review_count,
-        top_issues=top_issues[:3],
+        solution_issues=solution_issues,
+        top_issues=technical_issues,
         overall_score=overall_score,
         portfolio_url=portfolio_url,
         sender_name=sender_name,

@@ -37,7 +37,45 @@ ANALYTICS_PATTERNS = [
 CHAT_WIDGET_PATTERNS = [
     "intercom", "drift", "tawk", "crisp.chat", "livechat",
     "zendesk", "hubspot", "tidio", "olark", "freshchat",
-    "chatwoot",
+    "chatwoot", "chatbot", "live-chat", "chat-widget",
+    "kommunicate", "botpress", "dialogflow", "manychat",
+]
+
+BOOKING_PATTERNS = [
+    "calendly", "acuity", "booksy", "schedulicity", "square appointments",
+    "setmore", "simplybook", "appointy", "zocdoc", "opencare",
+    "vagaro", "mindbody", "schedulista", "book-now", "book-appointment",
+    "schedule-appointment", "booking-widget", "reserve", "make-appointment",
+    "book online", "book-online", "schedule-now",
+]
+
+PAYMENT_PATTERNS = [
+    "stripe", "paypal", "square", "braintree", "razorpay",
+    "shopify", "woocommerce", "bigcommerce", "ecwid", "snipcart",
+    "buy-now", "add-to-cart", "checkout", "shopping-cart",
+    "e-commerce", "ecommerce", "online-store", "shop-now",
+]
+
+NEWSLETTER_PATTERNS = [
+    "mailchimp", "convertkit", "sendinblue", "brevo", "constantcontact",
+    "mailerlite", "newsletter", "subscribe", "email-signup",
+    "mailing-list", "stay-updated", "get-updates",
+]
+
+REVIEW_WIDGET_PATTERNS = [
+    "trustpilot", "yelp-widget", "google-reviews", "birdeye",
+    "podium", "reputation.com", "yotpo", "stamped.io",
+    "judge.me", "reviews.io", "testimonial",
+]
+
+ORDERING_PATTERNS = [
+    "doordash", "grubhub", "ubereats", "uber-eats", "postmates",
+    "order-online", "order-now", "online-ordering", "menu-order",
+    "toast-tab", "toasttab", "chownow", "slice", "olo.com",
+]
+
+WHATSAPP_PATTERNS = [
+    "wa.me", "whatsapp", "api.whatsapp",
 ]
 
 FORM_INDICATORS = [
@@ -149,6 +187,14 @@ class WebsiteAnalyzer:
         self._check_open_graph(soup, result, issues)
         self._check_contact_form(soup, html, result, issues)
         self._check_chat_widget(html, result, issues)
+        self._check_booking_system(soup, html, result, issues)
+        self._check_online_payments(soup, html, result, issues)
+        self._check_newsletter(soup, html, result, issues)
+        self._check_review_widget(soup, html, result, issues)
+        self._check_online_ordering(soup, html, result, issues)
+        self._check_whatsapp(soup, html, result, issues)
+        self._check_maps_embed(soup, html, result, issues)
+        self._check_automated_features(soup, html, result, issues)
         self._check_structured_data(soup, html, result, issues)
         self._check_responsive_design(soup, html, result, issues)
         self._check_headers(response, result, issues)
@@ -458,6 +504,158 @@ class WebsiteAnalyzer:
         found = any(pattern in html_lower for pattern in CHAT_WIDGET_PATTERNS)
         result["has_chat_widget"] = found
 
+        if not found:
+            issues.append({
+                "issue": "No Live Chat / Chatbot",
+                "impact": "high",
+                "category": "business_tools",
+                "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+                "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+                "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed — most businesses lose 50%+ of potential customers who leave without contacting.",
+            })
+
+    def _check_booking_system(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        all_text = soup.get_text().lower()
+        found = any(pattern in html_lower or pattern in all_text for pattern in BOOKING_PATTERNS)
+        result["has_booking_system"] = found
+
+        if not found:
+            issues.append({
+                "issue": "No Online Booking / Appointment System",
+                "impact": "high",
+                "category": "business_tools",
+                "description": "Your website has no way for customers to book appointments or reserve services online.",
+                "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+                "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders.",
+            })
+
+    def _check_online_payments(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        all_text = soup.get_text().lower()
+        found = any(pattern in html_lower or pattern in all_text for pattern in PAYMENT_PATTERNS)
+        result["has_online_payments"] = found
+
+        if not found:
+            issues.append({
+                "issue": "No Online Payment System",
+                "impact": "medium",
+                "category": "business_tools",
+                "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+                "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+                "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront.",
+            })
+
+    def _check_newsletter(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        all_text = soup.get_text().lower()
+        found = any(pattern in html_lower or pattern in all_text for pattern in NEWSLETTER_PATTERNS)
+        result["has_newsletter"] = found
+
+        if not found:
+            issues.append({
+                "issue": "No Email Marketing / Newsletter Signup",
+                "impact": "medium",
+                "category": "business_tools",
+                "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+                "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+                "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions.",
+            })
+
+    def _check_review_widget(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        all_text = soup.get_text().lower()
+        found = any(pattern in html_lower or pattern in all_text for pattern in REVIEW_WIDGET_PATTERNS)
+
+        if not found:
+            testimonial_tags = soup.find_all(class_=re.compile(r"review|testimonial|rating", re.I))
+            if testimonial_tags:
+                found = True
+
+        result["has_review_widget"] = found
+
+        if not found:
+            issues.append({
+                "issue": "No Customer Reviews / Testimonials Display",
+                "impact": "medium",
+                "category": "business_tools",
+                "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+                "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+                "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table.",
+            })
+
+    def _check_online_ordering(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        all_text = soup.get_text().lower()
+        found = any(pattern in html_lower or pattern in all_text for pattern in ORDERING_PATTERNS)
+        result["has_online_ordering"] = found
+
+    def _check_whatsapp(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+        found = any(pattern in html_lower for pattern in WHATSAPP_PATTERNS)
+        result["has_whatsapp"] = found
+
+        if not found:
+            issues.append({
+                "issue": "No WhatsApp Business Integration",
+                "impact": "medium",
+                "category": "business_tools",
+                "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+                "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+                "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% — it's the most natural communication channel for many customers.",
+            })
+
+    def _check_maps_embed(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        has_map = bool(soup.find("iframe", src=re.compile(r"google.*maps|maps\.google", re.I)))
+        if not has_map:
+            has_map = "google.com/maps" in html.lower() or "maps.googleapis.com" in html.lower()
+        result["has_maps_embed"] = has_map
+
+        if not has_map:
+            issues.append({
+                "issue": "No Google Maps Embed",
+                "impact": "low",
+                "category": "business_tools",
+                "description": "Your website doesn't have an embedded Google Map showing your location.",
+                "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+                "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic.",
+            })
+
+    def _check_automated_features(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
+        html_lower = html.lower()
+
+        has_crm = any(p in html_lower for p in [
+            "salesforce", "hubspot-crm", "zoho", "pipedrive",
+            "freshsales", "monday.com",
+        ])
+        result["has_crm"] = has_crm
+
+        has_auto_reminders = any(p in html_lower for p in [
+            "reminder", "sms-notification", "appointment-reminder",
+            "twilio", "sendgrid", "automated-email",
+        ])
+        result["has_auto_reminders"] = has_auto_reminders
+
+        missing_features = []
+        if not has_crm:
+            missing_features.append("CRM system for customer management")
+        if not has_auto_reminders:
+            missing_features.append("automated appointment reminders (SMS/Email)")
+        if not result.get("has_booking_system"):
+            missing_features.append("self-service booking portal")
+        if not result.get("has_newsletter"):
+            missing_features.append("automated email marketing campaigns")
+
+        if len(missing_features) >= 2:
+            issues.append({
+                "issue": "Missing Business Automation Tools",
+                "impact": "high",
+                "category": "business_tools",
+                "description": f"Your business lacks key automation: {', '.join(missing_features)}. You're likely handling these manually or not at all.",
+                "recommendation": "I can build a custom automation suite — automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+                "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks.",
+            })
+
     def _check_structured_data(self, soup: BeautifulSoup, html: str, result: dict, issues: list) -> None:
         has_json_ld = bool(soup.find("script", type="application/ld+json"))
         has_microdata = bool(soup.find(attrs={"itemscope": True}))
@@ -676,6 +874,15 @@ class WebsiteAnalyzer:
             "has_social_links": None,
             "has_contact_form": None,
             "has_chat_widget": None,
+            "has_booking_system": None,
+            "has_online_payments": None,
+            "has_newsletter": None,
+            "has_review_widget": None,
+            "has_online_ordering": None,
+            "has_whatsapp": None,
+            "has_maps_embed": None,
+            "has_crm": None,
+            "has_auto_reminders": None,
             "has_structured_data": None,
             "has_favicon": None,
             "has_open_graph": None,

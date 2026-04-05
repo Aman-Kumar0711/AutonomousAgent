@@ -11,6 +11,7 @@ import {
   Search,
   Zap,
   FileText,
+  Rocket,
 } from 'lucide-react';
 import ScoreGauge from '@/components/ScoreGauge';
 import IssueCard from '@/components/IssueCard';
@@ -87,8 +88,10 @@ export default function AuditPageContent({ id }: { id: string }) {
     { label: 'Page Speed', score: audit.page_speed_score, icon: Zap },
   ];
 
-  const highIssues = audit.issues.filter((i) => i.impact === 'high').length;
-  const medIssues = audit.issues.filter((i) => i.impact === 'medium').length;
+  const businessToolIssues = audit.issues.filter((i) => i.category === 'business_tools');
+  const technicalIssues = audit.issues.filter((i) => i.category !== 'business_tools');
+  const highIssues = technicalIssues.filter((i) => i.impact === 'high').length;
+  const medIssues = technicalIssues.filter((i) => i.impact === 'medium').length;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -173,7 +176,35 @@ export default function AuditPageContent({ id }: { id: string }) {
           <QuickStat label="Issues Found" value={`${audit.issues.length}`} color={audit.issues.length > 5 ? '#ef4444' : '#eab308'} icon={FileText} />
         </motion.div>
 
-        {audit.issues.length > 0 && (
+        {businessToolIssues.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-10"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+                <Rocket className="w-5 h-5 text-indigo-600" />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-slate-900">Growth Opportunities</h2>
+                <p className="text-sm text-slate-500 mt-0.5">
+                  Tools &amp; features that can bring you more customers
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              {businessToolIssues.map((issue, idx) => (
+                <IssueCard key={`bt-${idx}`} issue={issue} index={idx} />
+              ))}
+            </div>
+          </motion.section>
+        )}
+
+        {technicalIssues.length > 0 && (
           <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -183,21 +214,21 @@ export default function AuditPageContent({ id }: { id: string }) {
           >
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-xl font-bold text-slate-900">Issues Found</h2>
+                <h2 className="text-xl font-bold text-slate-900">Technical Issues</h2>
                 <p className="text-sm text-slate-500 mt-1">
                   {highIssues > 0 && <span className="text-red-600 font-medium">{highIssues} critical</span>}
                   {highIssues > 0 && medIssues > 0 && ' · '}
                   {medIssues > 0 && <span className="text-yellow-600 font-medium">{medIssues} moderate</span>}
                   {(highIssues > 0 || medIssues > 0) && ' · '}
-                  {audit.issues.length - highIssues - medIssues > 0 && (
-                    <span className="text-slate-500">{audit.issues.length - highIssues - medIssues} minor</span>
+                  {technicalIssues.length - highIssues - medIssues > 0 && (
+                    <span className="text-slate-500">{technicalIssues.length - highIssues - medIssues} minor</span>
                   )}
                 </p>
               </div>
             </div>
 
             <div className="space-y-3">
-              {audit.issues
+              {technicalIssues
                 .sort((a, b) => {
                   const order: Record<string, number> = { high: 0, medium: 1, low: 2 };
                   return (order[a.impact] ?? 3) - (order[b.impact] ?? 3);

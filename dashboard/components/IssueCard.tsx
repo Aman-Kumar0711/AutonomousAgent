@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, AlertTriangle, AlertCircle, Info } from 'lucide-react';
 import { Issue } from '@/lib/types';
-import { getImpactColor, getCategoryColor } from '@/lib/data';
+import { getImpactColor, getCategoryColor, getCategoryLabel } from '@/lib/data';
 
 interface IssueCardProps {
   issue: Issue;
@@ -39,7 +39,7 @@ export default function IssueCard({ issue, index }: IssueCardProps) {
               {issue.impact.charAt(0).toUpperCase() + issue.impact.slice(1)} Impact
             </span>
             <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${getCategoryColor(issue.category)}`}>
-              {issue.category.charAt(0).toUpperCase() + issue.category.slice(1)}
+              {getCategoryLabel(issue.category)}
             </span>
           </div>
         </div>
