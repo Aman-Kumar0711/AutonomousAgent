@@ -6,7 +6,7 @@
     "businesses": [
       {
         "id": 1,
-        "name": "Happy Smiles",
+        "name": "Happy Smiles LA",
         "domain": "dental",
         "website": "https://happysmilesla.com/en/",
         "email": "info.alfaro1@gmail.com",
@@ -16,9 +16,9 @@
         "state": "CA",
         "rating": 4.9,
         "review_count": 1686,
-        "source": "google_maps",
+        "source": "manual",
         "category": "Dentist",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-05T16:42:58.555345",
         "audit": {
           "overall_score": 63,
@@ -110,6 +110,13 @@
           ],
           "load_time_seconds": 1.78,
           "audited_at": "2026-04-05T16:43:39.624373"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-05T16:46:06.989554",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -126,7 +133,7 @@
         "review_count": 741,
         "source": "google_maps",
         "category": "Dentist",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-05T16:43:12.517432",
         "audit": {
           "overall_score": 84,
@@ -154,6 +161,13 @@
           ],
           "load_time_seconds": 1.82,
           "audited_at": "2026-04-05T16:43:43.016318"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-05T16:46:10.818397",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -170,7 +184,7 @@
         "review_count": 387,
         "source": "google_maps",
         "category": "Dentist",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-05T16:43:24.308155",
         "audit": {
           "overall_score": 87,
@@ -198,6 +212,13 @@
           ],
           "load_time_seconds": 2.21,
           "audited_at": "2026-04-05T16:43:49.245997"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-05T16:46:14.730329",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -220,6 +241,81 @@
     ]
   },
   {
+    "domain": "restaurant",
+    "count": 4,
+    "avg_score": 0,
+    "businesses": [
+      {
+        "id": 7,
+        "name": "Hull & Oak",
+        "domain": "restaurant",
+        "website": "https://hullandoak.com/",
+        "email": null,
+        "phone": "(713) 242-8555",
+        "address": "1070 Dallas St, Houston, TX 77002",
+        "city": "Houston",
+        "state": "TX",
+        "rating": 4.6,
+        "review_count": 1089,
+        "source": "google_maps",
+        "category": "Southern restaurant (US)",
+        "status": "new",
+        "created_at": "2026-04-05T17:01:06.796511"
+      },
+      {
+        "id": 8,
+        "name": "Aquarium Restaurant",
+        "domain": "restaurant",
+        "website": "https://www.downtownaquariumhouston.com/aquarium-restaurant",
+        "email": "aquariumhouston@ldry.com",
+        "phone": "(713) 315-5126",
+        "address": "410 Bagby St, Houston, TX 77002",
+        "city": "Houston",
+        "state": "TX",
+        "rating": 4.7,
+        "review_count": 10725,
+        "source": "google_maps",
+        "category": "Seafood restaurant",
+        "status": "new",
+        "created_at": "2026-04-05T17:01:12.441684"
+      },
+      {
+        "id": 9,
+        "name": "Lost & Found",
+        "domain": "restaurant",
+        "website": "https://www.lostandfoundmidtown.com/",
+        "email": null,
+        "phone": "(832) 649-3050",
+        "address": "160 W Gray St, Houston, TX 77019",
+        "city": "Houston",
+        "state": "TX",
+        "rating": 4.8,
+        "review_count": 17174,
+        "source": "google_maps",
+        "category": "Bar & grill",
+        "status": "new",
+        "created_at": "2026-04-05T17:01:47.211812"
+      },
+      {
+        "id": 10,
+        "name": "La Fisheria",
+        "domain": "restaurant",
+        "website": "http://www.lafisheriahtx.com/",
+        "email": "lafisheria.downtown@gmail.com",
+        "phone": "(713) 802-1712",
+        "address": "213 Milam St, Houston, TX 77002",
+        "city": "Houston",
+        "state": "TX",
+        "rating": 4.8,
+        "review_count": 4666,
+        "source": "google_maps",
+        "category": "Mexican restaurant",
+        "status": "new",
+        "created_at": "2026-04-05T17:01:57.547953"
+      }
+    ]
+  },
+  {
     "domain": "healthcare",
     "count": 1,
     "avg_score": 84.0,
@@ -238,7 +334,7 @@
         "review_count": 1320,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-05T16:43:36.968202",
         "audit": {
           "overall_score": 84,
@@ -266,7 +362,38 @@
           ],
           "load_time_seconds": 1.26,
           "audited_at": "2026-04-05T16:43:52.002291"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-05T16:46:18.641885",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
+      }
+    ]
+  },
+  {
+    "domain": "other",
+    "count": 1,
+    "avg_score": 0,
+    "businesses": [
+      {
+        "id": 6,
+        "name": "Bungalow",
+        "domain": "other",
+        "website": "https://bungalowdining.com/",
+        "email": "reservation@alifehospitality.com",
+        "phone": "(713) 393-7868",
+        "address": "407 Main St, Houston, TX 77002",
+        "city": "Houston",
+        "state": "TX",
+        "rating": 4.5,
+        "review_count": 3147,
+        "source": "google_maps",
+        "category": "Steak house",
+        "status": "new",
+        "created_at": "2026-04-05T17:00:49.481173"
       }
     ]
   }

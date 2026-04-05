@@ -199,6 +199,26 @@ class DatabaseManager:
                 if a.issues:
                     total_issues += len(a.issues)
 
+            # Group by status
+            by_status = {}
+            status_rows = (
+                session.query(Business.status, func.count(Business.id))
+                .group_by(Business.status)
+                .all()
+            )
+            for status, count in status_rows:
+                by_status[status or "new"] = count
+
+            # Group by domain
+            by_domain = {}
+            domain_rows = (
+                session.query(Business.domain, func.count(Business.id))
+                .group_by(Business.domain)
+                .all()
+            )
+            for domain, count in domain_rows:
+                by_domain[domain or "other"] = count
+
             return {
                 "total_leads": total,
                 "total_audited": audited,
@@ -210,6 +230,8 @@ class DatabaseManager:
                 "issues_found": total_issues,
                 "emails_sent": contacted,
                 "response_rate": round((replied / contacted) * 100, 1) if contacted > 0 else 0,
+                "by_status": by_status,
+                "by_domain": by_domain,
             }
 
     def get_businesses_by_domain(self) -> dict[str, list[Business]]:

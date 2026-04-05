@@ -1,12 +1,12 @@
 {
-  "total_leads": 5,
+  "total_leads": 10,
   "total_audited": 4,
-  "total_contacted": 0,
+  "total_contacted": 4,
   "total_replied": 0,
   "total_converted": 0,
   "average_score": 79.5,
-  "domains_covered": 2,
+  "domains_covered": 4,
   "issues_found": 16,
-  "emails_sent": 0,
-  "response_rate": 0
+  "emails_sent": 4,
+  "response_rate": 0.0
 }

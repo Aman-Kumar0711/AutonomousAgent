@@ -272,10 +272,10 @@ def stats():
     table.add_column("Metric", style="bold")
     table.add_column("Value", justify="right")
 
-    table.add_row("Total Businesses", str(data["total_businesses"]))
+    table.add_row("Total Businesses", str(data["total_leads"]))
     table.add_row("Audited", str(data["total_audited"]))
     table.add_row("Contacted", str(data["total_contacted"]))
-    table.add_row("Avg. Audit Score", str(data["average_audit_score"]))
+    table.add_row("Avg. Audit Score", str(data["average_score"]))
 
     console.print(table)
 
@@ -400,10 +400,10 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
     data = db.get_stats()
     console.print(Panel(
         f"[bold green]Pipeline Complete[/bold green]\n"
-        f"Businesses: {data['total_businesses']} | "
+        f"Businesses: {data['total_leads']} | "
         f"Audited: {data['total_audited']} | "
         f"Contacted: {data['total_contacted']} | "
-        f"Avg Score: {data['average_audit_score']}",
+        f"Avg Score: {data['average_score']}",
         border_style="green",
     ))
 
