@@ -1,15 +1,12 @@
 {
-  "total_businesses": 3,
-  "by_status": {
-    "audited": 3
-  },
-  "total_audited": 3,
+  "total_leads": 5,
+  "total_audited": 4,
   "total_contacted": 0,
-  "average_audit_score": 71.0,
-  "by_domain": {
-    "restaurant": 3
-  },
-  "by_source": {
-    "google_maps": 3
-  }
+  "total_replied": 0,
+  "total_converted": 0,
+  "average_score": 79.5,
+  "domains_covered": 2,
+  "issues_found": 16,
+  "emails_sent": 0,
+  "response_rate": 0
 }

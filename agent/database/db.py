@@ -165,11 +165,6 @@ class DatabaseManager:
     def get_stats(self) -> dict:
         with self.get_session() as session:
             total = session.query(func.count(Business.id)).scalar() or 0
-            by_status = dict(
-                session.query(Business.status, func.count(Business.id))
-                .group_by(Business.status)
-                .all()
-            )
             audited = session.query(func.count(WebsiteAudit.id)).scalar() or 0
             contacted = (
                 session.query(func.count(OutreachRecord.id))
@@ -177,30 +172,44 @@ class DatabaseManager:
                 .scalar()
                 or 0
             )
+            replied = (
+                session.query(func.count(Business.id))
+                .filter(Business.status == "replied")
+                .scalar()
+                or 0
+            )
+            converted = (
+                session.query(func.count(Business.id))
+                .filter(Business.status == "converted")
+                .scalar()
+                or 0
+            )
             avg_score = (
                 session.query(func.avg(WebsiteAudit.overall_score)).scalar()
             )
-            by_domain = dict(
-                session.query(Business.domain, func.count(Business.id))
+            domains_covered = (
+                session.query(func.count(func.distinct(Business.domain)))
                 .filter(Business.domain.isnot(None))
-                .group_by(Business.domain)
-                .all()
+                .scalar()
+                or 0
             )
-            by_source = dict(
-                session.query(Business.source, func.count(Business.id))
-                .filter(Business.source.isnot(None))
-                .group_by(Business.source)
-                .all()
-            )
+            total_issues = 0
+            audits = session.query(WebsiteAudit).all()
+            for a in audits:
+                if a.issues:
+                    total_issues += len(a.issues)
 
             return {
-                "total_businesses": total,
-                "by_status": by_status,
+                "total_leads": total,
                 "total_audited": audited,
                 "total_contacted": contacted,
-                "average_audit_score": round(avg_score, 1) if avg_score else 0,
-                "by_domain": by_domain,
-                "by_source": by_source,
+                "total_replied": replied,
+                "total_converted": converted,
+                "average_score": round(avg_score, 1) if avg_score else 0,
+                "domains_covered": domains_covered,
+                "issues_found": total_issues,
+                "emails_sent": contacted,
+                "response_rate": round((replied / contacted) * 100, 1) if contacted > 0 else 0,
             }
 
     def get_businesses_by_domain(self) -> dict[str, list[Business]]:
@@ -283,9 +292,23 @@ class DatabaseManager:
             with open(output_dir / "stats.json", "w") as f:
                 json.dump(stats, f, indent=2, default=_serialize_dt)
 
-            domain_groups = defaultdict(list)
+            domain_map = defaultdict(list)
             for biz in businesses_data:
                 key = biz.get("domain") or "other"
-                domain_groups[key].append(biz)
+                domain_map[key].append(biz)
+
+            domain_groups = []
+            for domain_name, biz_list in sorted(domain_map.items(), key=lambda x: -len(x[1])):
+                scores = [
+                    b["audit"]["overall_score"]
+                    for b in biz_list
+                    if b.get("audit") and b["audit"].get("overall_score") is not None
+                ]
+                domain_groups.append({
+                    "domain": domain_name,
+                    "count": len(biz_list),
+                    "avg_score": round(sum(scores) / len(scores), 1) if scores else 0,
+                    "businesses": biz_list,
+                })
             with open(output_dir / "by_domain.json", "w") as f:
-                json.dump(dict(domain_groups), f, indent=2, default=_serialize_dt)
+                json.dump(domain_groups, f, indent=2, default=_serialize_dt)

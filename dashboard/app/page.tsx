@@ -67,7 +67,7 @@ export default function DashboardPage() {
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
     .slice(0, 8);
 
-  const maxDomainCount = Math.max(...(domains.map(d => d.count) || [1]));
+  const maxDomainCount = domains.length > 0 ? Math.max(...domains.map(d => d.count)) : 1;
 
   return (
     <>
