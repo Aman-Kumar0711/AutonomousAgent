@@ -1,20 +1,21 @@
 {
-  "total_leads": 10,
-  "total_audited": 9,
+  "total_leads": 20,
+  "total_audited": 19,
   "total_contacted": 7,
   "total_replied": 0,
   "total_converted": 0,
-  "average_score": 77.9,
-  "domains_covered": 4,
-  "issues_found": 55,
+  "average_score": 70.9,
+  "domains_covered": 5,
+  "issues_found": 186,
   "emails_sent": 7,
   "response_rate": 0.0,
   "by_status": {
-    "audited": 2,
+    "audited": 12,
     "contacted": 7,
     "new": 1
   },
   "by_domain": {
+    "beauty": 10,
     "dental": 4,
     "healthcare": 1,
     "other": 1,
