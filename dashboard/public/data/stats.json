@@ -1,0 +1,15 @@
+{
+  "total_businesses": 3,
+  "by_status": {
+    "audited": 3
+  },
+  "total_audited": 3,
+  "total_contacted": 0,
+  "average_audit_score": 71.0,
+  "by_domain": {
+    "restaurant": 3
+  },
+  "by_source": {
+    "google_maps": 3
+  }
+}

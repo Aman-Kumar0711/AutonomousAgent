@@ -1,0 +1,182 @@
+name: Run Lead Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Mode: scrape, manual, or batch'
+        required: true
+        default: 'scrape'
+        type: choice
+        options:
+          - scrape
+          - manual
+          - audit-only
+      business_type:
+        description: 'Business type (for scrape mode: restaurants, dentists, salons, etc.)'
+        required: false
+        default: 'restaurants'
+      city:
+        description: 'City name (for scrape mode: Los Angeles, Amsterdam, Toronto)'
+        required: false
+        default: 'Los Angeles'
+      state:
+        description: 'State/Province (optional: CA, TX, ON, etc.)'
+        required: false
+        default: ''
+      country:
+        description: 'Country code: us, ca, uk, nl, de, fr, au'
+        required: false
+        default: 'us'
+      limit:
+        description: 'Max businesses to scrape'
+        required: false
+        default: '10'
+      website:
+        description: 'Website URL (for manual mode)'
+        required: false
+        default: ''
+      email:
+        description: 'Business email (for manual mode, optional)'
+        required: false
+        default: ''
+      business_name:
+        description: 'Business name (for manual mode, optional)'
+        required: false
+        default: ''
+      send_emails:
+        description: 'Send outreach emails?'
+        required: false
+        default: 'no'
+        type: choice
+        options:
+          - 'no'
+          - 'yes'
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: pip install -r agent/requirements.txt
+      
+      - name: Create .env
+        run: |
+          cat > .env << 'ENVEOF'
+          SERPAPI_KEY=${{ secrets.SERPAPI_KEY }}
+          SMTP_HOST=smtp.gmail.com
+          SMTP_PORT=587
+          SMTP_USER=${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
+          FROM_EMAIL=${{ secrets.SMTP_USER }}
+          FROM_NAME=Aman Kumar
+          YOUR_NAME=Aman Kumar
+          YOUR_EMAIL=${{ secrets.SMTP_USER }}
+          PORTFOLIO_BASE_URL=${{ secrets.PORTFOLIO_BASE_URL }}
+          ENVEOF
+      
+      - name: Download existing database
+        continue-on-error: true
+        run: |
+          mkdir -p data
+          if [ -f "data/leads.db" ]; then
+            echo "Database exists in repo"
+          fi
+      
+      - name: Restore database from artifact
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: leads-database
+          path: data/
+
+      - name: Run Agent (Scrape Mode)
+        if: inputs.mode == 'scrape'
+        run: |
+          STATE_FLAG=""
+          if [ -n "${{ inputs.state }}" ]; then
+            STATE_FLAG="--state ${{ inputs.state }}"
+          fi
+          
+          python -m agent scrape \
+            --type "${{ inputs.business_type }}" \
+            --city "${{ inputs.city }}" \
+            $STATE_FLAG \
+            --country "${{ inputs.country }}" \
+            --limit ${{ inputs.limit }}
+          
+          python -m agent audit --all
+          python -m agent export
+          
+          if [ "${{ inputs.send_emails }}" = "yes" ]; then
+            echo "y" | python -m agent outreach --all
+          fi
+          
+          python -m agent stats
+
+      - name: Run Agent (Manual Mode)
+        if: inputs.mode == 'manual'
+        run: |
+          SEND_FLAG=""
+          if [ "${{ inputs.send_emails }}" = "yes" ]; then
+            SEND_FLAG="--send"
+          fi
+          
+          EMAIL_FLAG=""
+          if [ -n "${{ inputs.email }}" ]; then
+            EMAIL_FLAG="--email ${{ inputs.email }}"
+          fi
+          
+          NAME_FLAG=""
+          if [ -n "${{ inputs.business_name }}" ]; then
+            NAME_FLAG="--name \"${{ inputs.business_name }}\""
+          fi
+          
+          python -m agent manual \
+            --website "${{ inputs.website }}" \
+            $EMAIL_FLAG \
+            $NAME_FLAG \
+            $SEND_FLAG
+          
+          python -m agent stats
+      
+      - name: Run Agent (Audit Only)
+        if: inputs.mode == 'audit-only'
+        run: |
+          python -m agent audit --all
+          python -m agent export
+          python -m agent stats
+
+      - name: Save database as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: leads-database
+          path: data/leads.db
+          retention-days: 90
+          overwrite: true
+      
+      - name: Upload exported data
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard-data
+          path: dashboard/public/data/
+          retention-days: 90
+          overwrite: true
+      
+      - name: Commit exported data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/public/data/*.json || true
+          git diff --staged --quiet || git commit -m "Update dashboard data [automated]"
+          git push || true
