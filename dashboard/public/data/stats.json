@@ -1,23 +1,23 @@
 {
-  "total_leads": 20,
-  "total_audited": 19,
-  "total_contacted": 7,
+  "total_leads": 40,
+  "total_audited": 38,
+  "total_contacted": 15,
   "total_replied": 0,
   "total_converted": 0,
-  "average_score": 70.9,
+  "average_score": 68.7,
   "domains_covered": 5,
-  "issues_found": 186,
-  "emails_sent": 7,
+  "issues_found": 391,
+  "emails_sent": 15,
   "response_rate": 0.0,
   "by_status": {
-    "audited": 12,
-    "contacted": 7,
-    "new": 1
+    "audited": 23,
+    "contacted": 15,
+    "new": 2
   },
   "by_domain": {
-    "beauty": 10,
+    "beauty": 11,
     "dental": 4,
-    "healthcare": 1,
+    "healthcare": 20,
     "other": 1,
     "restaurant": 4
   }
