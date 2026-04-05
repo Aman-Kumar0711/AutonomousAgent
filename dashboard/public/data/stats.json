@@ -1,12 +1,23 @@
 {
   "total_leads": 10,
-  "total_audited": 4,
-  "total_contacted": 4,
+  "total_audited": 9,
+  "total_contacted": 7,
   "total_replied": 0,
   "total_converted": 0,
-  "average_score": 79.5,
+  "average_score": 77.9,
   "domains_covered": 4,
-  "issues_found": 16,
-  "emails_sent": 4,
-  "response_rate": 0.0
+  "issues_found": 55,
+  "emails_sent": 7,
+  "response_rate": 0.0,
+  "by_status": {
+    "audited": 2,
+    "contacted": 7,
+    "new": 1
+  },
+  "by_domain": {
+    "dental": 4,
+    "healthcare": 1,
+    "other": 1,
+    "restaurant": 4
+  }
 }
