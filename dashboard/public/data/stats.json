@@ -1,18 +1,18 @@
 {
   "total_leads": 60,
-  "total_audited": 69,
-  "total_contacted": 29,
+  "total_audited": 73,
+  "total_contacted": 35,
   "total_replied": 0,
   "total_converted": 0,
-  "average_score": 71.6,
+  "average_score": 71.3,
   "domains_covered": 6,
-  "issues_found": 710,
-  "emails_sent": 29,
+  "issues_found": 770,
+  "emails_sent": 35,
   "response_rate": 0.0,
   "by_status": {
-    "audited": 25,
-    "contacted": 29,
-    "new": 6
+    "audited": 23,
+    "contacted": 35,
+    "new": 2
   },
   "by_domain": {
     "beauty": 11,
