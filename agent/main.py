@@ -1,3 +1,4 @@
+import subprocess
 import sys
 from datetime import datetime, timezone
 
@@ -17,6 +18,44 @@ from .utils.helpers import generate_portfolio_url
 
 console = Console()
 db = DatabaseManager()
+
+
+def _deploy_dashboard() -> bool:
+    """Export data, commit, and push to deploy dashboard on Vercel."""
+    try:
+        db.export_to_json()
+        console.print("  [green]Data exported for dashboard[/green]")
+
+        result = subprocess.run(
+            ["git", "add", "dashboard/public/data/"],
+            capture_output=True, text=True,
+        )
+        # Check if there are changes to commit
+        status = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            capture_output=True,
+        )
+        if status.returncode == 0:
+            console.print("  [dim]Dashboard data unchanged, no push needed.[/dim]")
+            return True
+
+        subprocess.run(
+            ["git", "commit", "-m", "update dashboard data"],
+            capture_output=True, text=True,
+        )
+        push = subprocess.run(
+            ["git", "push", "origin", "main"],
+            capture_output=True, text=True,
+        )
+        if push.returncode == 0:
+            console.print("  [green]Dashboard deployed to Vercel[/green]")
+            return True
+        else:
+            console.print(f"  [red]Push failed: {push.stderr.strip()}[/red]")
+            return False
+    except Exception as e:
+        console.print(f"  [red]Deploy error: {e}[/red]")
+        return False
 
 
 @click.group()
@@ -170,6 +209,9 @@ def outreach(send_all: bool, business_id: int | None, dry_run: bool):
             console.print("[dim]Cancelled.[/dim]")
             return
 
+        console.print("\n[bold cyan]Deploying dashboard before sending...[/bold cyan]")
+        _deploy_dashboard()
+
     sent = 0
     for biz in businesses:
         audit_record = db.get_audit(biz.id)
@@ -255,8 +297,8 @@ def export():
         title="Data Export",
         border_style="cyan",
     ))
-    db.export_to_json()
-    console.print("[bold green]Export complete.[/bold green]")
+    _deploy_dashboard()
+    console.print("[bold green]Export & deploy complete.[/bold green]")
 
 
 # --------------------------------------------------------------------------
@@ -358,10 +400,9 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
                     console.print(f"  [red]Error: {biz.name}: {e}[/red]")
             progress.advance(task)
 
-    # Step 3: Export
-    console.print("\n[bold cyan]Step 3/4: Exporting data[/bold cyan]")
-    db.export_to_json()
-    console.print("  [green]Data exported for dashboard[/green]")
+    # Step 3: Export & Deploy
+    console.print("\n[bold cyan]Step 3/4: Deploying dashboard[/bold cyan]")
+    _deploy_dashboard()
 
     # Step 4: Outreach
     console.print("\n[bold cyan]Step 4/4: Outreach[/bold cyan]")
@@ -374,6 +415,7 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
             for biz in eligible:
                 audit_record = db.get_audit(biz.id)
                 if not audit_record:
+                    console.print(f"  [yellow]Skipping {biz.name}: no audit record[/yellow]")
                     continue
                 portfolio_url = generate_portfolio_url(biz.id, biz.name)
                 success = sender.send_outreach(biz, audit_record, portfolio_url)
