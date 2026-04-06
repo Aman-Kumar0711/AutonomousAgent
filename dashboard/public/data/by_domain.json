@@ -2,7 +2,7 @@
   {
     "domain": "healthcare",
     "count": 61,
-    "avg_score": 67.7,
+    "avg_score": 66.6,
     "businesses": [
       {
         "id": 4,
@@ -2212,7 +2212,7 @@
         "review_count": 551,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:42.372701",
         "audit": {
           "overall_score": 84,
@@ -2304,6 +2304,13 @@
           ],
           "load_time_seconds": 4.24,
           "audited_at": "2026-04-06T11:28:01.962186"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:08:42.481896",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -2320,7 +2327,7 @@
         "review_count": 224,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:47.908503",
         "audit": {
           "overall_score": 87,
@@ -2412,6 +2419,13 @@
           ],
           "load_time_seconds": 1.66,
           "audited_at": "2026-04-06T11:28:29.408547"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:08:46.632604",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -2428,7 +2442,7 @@
         "review_count": 233,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:50.479200",
         "audit": {
           "overall_score": 76,
@@ -2512,6 +2526,13 @@
           ],
           "load_time_seconds": 2.02,
           "audited_at": "2026-04-06T11:30:11.497084"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:08:58.896953",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -2732,7 +2753,7 @@
         "review_count": 227,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:56.403697",
         "audit": {
           "overall_score": 79,
@@ -2824,6 +2845,13 @@
           ],
           "load_time_seconds": 2.87,
           "audited_at": "2026-04-06T11:31:31.321854"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:02.825028",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -3028,7 +3056,7 @@
         "review_count": 390,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:31.638156",
         "audit": {
           "overall_score": 98,
@@ -3080,6 +3108,13 @@
           ],
           "load_time_seconds": 1.5,
           "audited_at": "2026-04-06T11:35:21.956917"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:14.981704",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -3096,7 +3131,7 @@
         "review_count": 286,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:39.472327",
         "audit": {
           "overall_score": 68,
@@ -3228,6 +3263,13 @@
           ],
           "load_time_seconds": 4.72,
           "audited_at": "2026-04-06T11:36:50.707627"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:22.737270",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -3452,7 +3494,7 @@
         "review_count": 70,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:53.264080",
         "audit": {
           "overall_score": 62,
@@ -3576,6 +3618,13 @@
           ],
           "load_time_seconds": 3.02,
           "audited_at": "2026-04-06T11:41:02.520176"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:30.987242",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -3592,7 +3641,7 @@
         "review_count": 87,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:07.980491",
         "audit": {
           "overall_score": 74,
@@ -3700,6 +3749,13 @@
           ],
           "load_time_seconds": 5.4,
           "audited_at": "2026-04-06T11:42:11.486117"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:39.623231",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -3824,7 +3880,7 @@
         "review_count": 63,
         "source": "google_maps",
         "category": "Chiropractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:12.736760",
         "audit": {
           "overall_score": 49,
@@ -3980,6 +4036,13 @@
           ],
           "load_time_seconds": 2.61,
           "audited_at": "2026-04-06T11:43:41.271172"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:43.499939",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -4120,7 +4183,7 @@
         "review_count": 511,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:27.611234",
         "audit": {
           "overall_score": 61,
@@ -4212,6 +4275,13 @@
           ],
           "load_time_seconds": 3.32,
           "audited_at": "2026-04-06T11:47:43.412185"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:59.596248",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -5056,8 +5126,83 @@
         "review_count": 421,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:44.232068"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:44.232068",
+        "audit": {
+          "overall_score": 72,
+          "seo_score": 85,
+          "page_speed_score": 26,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (79 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 79 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"tooth dental care in Waterloo \u00a6 Dentist \u00a6 Dental Hygiene \u00a6 W\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Suboptimal Meta Description Length (318 chars)",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your meta description is 318 characters. Ideal length is 120-160.",
+              "recommendation": "Adjust to 120-160 characters for optimal display in search results.",
+              "business_impact": "A truncated description may cut off your call-to-action in search results."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email). You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 26/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 26/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 7.21,
+          "audited_at": "2026-04-06T12:03:15.711155"
+        }
       },
       {
         "id": 164,
@@ -5073,8 +5218,187 @@
         "review_count": 419,
         "source": "google_maps",
         "category": "Medical spa",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:45.513276"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:45.513276",
+        "audit": {
+          "overall_score": 52,
+          "seo_score": 15,
+          "page_speed_score": 93,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (16 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 16 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"Just a moment...\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Missing Meta Description",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+              "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+              "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+            },
+            {
+              "issue": "Missing H1 Heading",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your page doesn't have an H1 heading, which tells Google what your page is about.",
+              "recommendation": "Add one clear H1 heading at the top of your page that describes your main offering.",
+              "business_impact": "Without an H1, search engines struggle to understand your page topic, reducing your ranking potential."
+            },
+            {
+              "issue": "Missing Favicon",
+              "impact": "low",
+              "category": "ux",
+              "description": "Your website doesn't have a favicon (the small icon in browser tabs).",
+              "recommendation": "Add a favicon that matches your logo. Use a 32x32 PNG or ICO file.",
+              "business_impact": "A missing favicon looks unprofessional and makes your site harder to find among open browser tabs."
+            },
+            {
+              "issue": "Missing XML Sitemap",
+              "impact": "medium",
+              "category": "seo",
+              "description": "No sitemap.xml found at /sitemap.xml. A sitemap helps Google discover all your pages.",
+              "recommendation": "Generate and submit an XML sitemap to help search engines crawl your site efficiently.",
+              "business_impact": "Without a sitemap, some of your pages may never appear in Google search results."
+            },
+            {
+              "issue": "Missing robots.txt",
+              "impact": "low",
+              "category": "seo",
+              "description": "No robots.txt file found. This file controls how search engines crawl your site.",
+              "recommendation": "Create a robots.txt file that references your sitemap and sets crawl rules.",
+              "business_impact": "Search engines may crawl your site inefficiently, wasting crawl budget on unimportant pages."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Social Media Links",
+              "impact": "medium",
+              "category": "marketing",
+              "description": "Your website doesn't link to any social media profiles.",
+              "recommendation": "Add links to your active social media profiles (at minimum Facebook and Instagram).",
+              "business_impact": "Social proof is critical \u2014 71% of consumers who have a positive social media experience with a brand recommend it to others."
+            },
+            {
+              "issue": "Missing Open Graph Tags",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site lacks Open Graph tags, which control how your links appear when shared on social media.",
+              "recommendation": "Add og:title, og:description, og:image, and og:url meta tags.",
+              "business_impact": "When someone shares your website on Facebook or LinkedIn, it shows a plain text link instead of a rich preview with image and description."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Online Payment System",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+              "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+              "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No Customer Reviews / Testimonials Display",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+              "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+              "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "No Structured Data / Schema Markup",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site has no structured data (Schema.org markup), which helps Google show rich results.",
+              "recommendation": "Add LocalBusiness schema markup with your name, address, phone, hours, and reviews.",
+              "business_impact": "Businesses with schema markup can get rich snippets in Google (stars, hours, price range), which increase click-through rates by 20-30%."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            }
+          ],
+          "load_time_seconds": 1.35,
+          "audited_at": "2026-04-06T12:04:10.899886"
+        }
       },
       {
         "id": 167,
@@ -5090,8 +5414,171 @@
         "review_count": 270,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:51.862002"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:51.862002",
+        "audit": {
+          "overall_score": 36,
+          "seo_score": 25,
+          "page_speed_score": 36,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (15 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 15 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"403 - Forbidden\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Missing Meta Description",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+              "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+              "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+            },
+            {
+              "issue": "Missing XML Sitemap",
+              "impact": "medium",
+              "category": "seo",
+              "description": "No sitemap.xml found at /sitemap.xml. A sitemap helps Google discover all your pages.",
+              "recommendation": "Generate and submit an XML sitemap to help search engines crawl your site efficiently.",
+              "business_impact": "Without a sitemap, some of your pages may never appear in Google search results."
+            },
+            {
+              "issue": "Missing robots.txt",
+              "impact": "low",
+              "category": "seo",
+              "description": "No robots.txt file found. This file controls how search engines crawl your site.",
+              "recommendation": "Create a robots.txt file that references your sitemap and sets crawl rules.",
+              "business_impact": "Search engines may crawl your site inefficiently, wasting crawl budget on unimportant pages."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Social Media Links",
+              "impact": "medium",
+              "category": "marketing",
+              "description": "Your website doesn't link to any social media profiles.",
+              "recommendation": "Add links to your active social media profiles (at minimum Facebook and Instagram).",
+              "business_impact": "Social proof is critical \u2014 71% of consumers who have a positive social media experience with a brand recommend it to others."
+            },
+            {
+              "issue": "Missing Open Graph Tags",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site lacks Open Graph tags, which control how your links appear when shared on social media.",
+              "recommendation": "Add og:title, og:description, og:image, and og:url meta tags.",
+              "business_impact": "When someone shares your website on Facebook or LinkedIn, it shows a plain text link instead of a rich preview with image and description."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Payment System",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+              "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+              "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No Customer Reviews / Testimonials Display",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+              "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+              "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "No Structured Data / Schema Markup",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site has no structured data (Schema.org markup), which helps Google show rich results.",
+              "recommendation": "Add LocalBusiness schema markup with your name, address, phone, hours, and reviews.",
+              "business_impact": "Businesses with schema markup can get rich snippets in Google (stars, hours, price range), which increase click-through rates by 20-30%."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 36/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 36/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 3.0,
+          "audited_at": "2026-04-06T12:06:20.560656"
+        }
       },
       {
         "id": 169,
@@ -5107,8 +5594,195 @@
         "review_count": 393,
         "source": "google_maps",
         "category": "Medical spa",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:00.174328"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:00.174328",
+        "audit": {
+          "overall_score": 47,
+          "seo_score": 15,
+          "page_speed_score": 72,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (16 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 16 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"Just a moment...\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Missing Meta Description",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+              "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+              "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+            },
+            {
+              "issue": "Missing H1 Heading",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your page doesn't have an H1 heading, which tells Google what your page is about.",
+              "recommendation": "Add one clear H1 heading at the top of your page that describes your main offering.",
+              "business_impact": "Without an H1, search engines struggle to understand your page topic, reducing your ranking potential."
+            },
+            {
+              "issue": "Missing Favicon",
+              "impact": "low",
+              "category": "ux",
+              "description": "Your website doesn't have a favicon (the small icon in browser tabs).",
+              "recommendation": "Add a favicon that matches your logo. Use a 32x32 PNG or ICO file.",
+              "business_impact": "A missing favicon looks unprofessional and makes your site harder to find among open browser tabs."
+            },
+            {
+              "issue": "Missing XML Sitemap",
+              "impact": "medium",
+              "category": "seo",
+              "description": "No sitemap.xml found at /sitemap.xml. A sitemap helps Google discover all your pages.",
+              "recommendation": "Generate and submit an XML sitemap to help search engines crawl your site efficiently.",
+              "business_impact": "Without a sitemap, some of your pages may never appear in Google search results."
+            },
+            {
+              "issue": "Missing robots.txt",
+              "impact": "low",
+              "category": "seo",
+              "description": "No robots.txt file found. This file controls how search engines crawl your site.",
+              "recommendation": "Create a robots.txt file that references your sitemap and sets crawl rules.",
+              "business_impact": "Search engines may crawl your site inefficiently, wasting crawl budget on unimportant pages."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Social Media Links",
+              "impact": "medium",
+              "category": "marketing",
+              "description": "Your website doesn't link to any social media profiles.",
+              "recommendation": "Add links to your active social media profiles (at minimum Facebook and Instagram).",
+              "business_impact": "Social proof is critical \u2014 71% of consumers who have a positive social media experience with a brand recommend it to others."
+            },
+            {
+              "issue": "Missing Open Graph Tags",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site lacks Open Graph tags, which control how your links appear when shared on social media.",
+              "recommendation": "Add og:title, og:description, og:image, and og:url meta tags.",
+              "business_impact": "When someone shares your website on Facebook or LinkedIn, it shows a plain text link instead of a rich preview with image and description."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Online Payment System",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+              "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+              "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No Customer Reviews / Testimonials Display",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+              "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+              "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "No Structured Data / Schema Markup",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site has no structured data (Schema.org markup), which helps Google show rich results.",
+              "recommendation": "Add LocalBusiness schema markup with your name, address, phone, hours, and reviews.",
+              "business_impact": "Businesses with schema markup can get rich snippets in Google (stars, hours, price range), which increase click-through rates by 20-30%."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Page Speed Needs Improvement (Score: 72/100)",
+              "impact": "medium",
+              "category": "performance",
+              "description": "Your mobile page speed score is 72/100. There's room for improvement.",
+              "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+              "business_impact": "Improving speed from 72 to 90+ could increase your conversion rate by 10-15%."
+            }
+          ],
+          "load_time_seconds": 1.04,
+          "audited_at": "2026-04-06T12:08:09.848617"
+        }
       },
       {
         "id": 173,
@@ -5124,8 +5798,67 @@
         "review_count": 284,
         "source": "google_maps",
         "category": "Dental clinic",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:09.889572"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:09.889572",
+        "audit": {
+          "overall_score": 81,
+          "seo_score": 100,
+          "page_speed_score": 45,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email). You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 45/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 45/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 5.68,
+          "audited_at": "2026-04-06T12:10:31.484702"
+        }
       },
       {
         "id": 176,
@@ -5336,7 +6069,7 @@
   {
     "domain": "home_services",
     "count": 59,
-    "avg_score": 71.1,
+    "avg_score": 71.8,
     "businesses": [
       {
         "id": 41,
@@ -8565,7 +9298,7 @@
         "review_count": 916,
         "source": "google_maps",
         "category": "Plumber",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:13.485194",
         "audit": {
           "overall_score": 83,
@@ -8649,6 +9382,13 @@
           ],
           "load_time_seconds": 2.04,
           "audited_at": "2026-04-06T11:44:00.454566"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:47.755440",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -8665,7 +9405,7 @@
         "review_count": 423,
         "source": "google_maps",
         "category": "HVAC contractor",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:16.076122",
         "audit": {
           "overall_score": 82,
@@ -8749,6 +9489,13 @@
           ],
           "load_time_seconds": 3.77,
           "audited_at": "2026-04-06T11:44:48.764571"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:55.748005",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -10669,8 +11416,99 @@
         "review_count": 1729,
         "source": "google_maps",
         "category": "HVAC contractor",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:48.016410"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:48.016410",
+        "audit": {
+          "overall_score": 82,
+          "seo_score": 100,
+          "page_speed_score": null,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Meta Description Length (175 chars)",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your meta description is 175 characters. Ideal length is 120-160.",
+              "recommendation": "Adjust to 120-160 characters for optimal display in search results.",
+              "business_impact": "A truncated description may cut off your call-to-action in search results."
+            },
+            {
+              "issue": "Multiple H1 Tags (3 found)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your page has 3 H1 headings. Best practice is exactly one.",
+              "recommendation": "Keep one H1 for your main heading and change others to H2 or H3.",
+              "business_impact": "Multiple H1 tags dilute your SEO focus and confuse search engines about your primary topic."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            }
+          ],
+          "load_time_seconds": 6.81,
+          "audited_at": "2026-04-06T12:05:19.593038"
+        }
       },
       {
         "id": 166,
@@ -10686,8 +11524,91 @@
         "review_count": 291,
         "source": "google_maps",
         "category": "Plumber",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:49.426957"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:49.426957",
+        "audit": {
+          "overall_score": 84,
+          "seo_score": 100,
+          "page_speed_score": 56,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Page Speed Needs Improvement (Score: 56/100)",
+              "impact": "medium",
+              "category": "performance",
+              "description": "Your mobile page speed score is 56/100. There's room for improvement.",
+              "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+              "business_impact": "Improving speed from 56 to 90+ could increase your conversion rate by 10-15%."
+            }
+          ],
+          "load_time_seconds": 3.98,
+          "audited_at": "2026-04-06T12:05:45.035977"
+        }
       },
       {
         "id": 168,
@@ -10703,8 +11624,75 @@
         "review_count": 207,
         "source": "google_maps",
         "category": "Roofing contractor",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:59.028827"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:59.028827",
+        "audit": {
+          "overall_score": 74,
+          "seo_score": 90,
+          "page_speed_score": 11,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Meta Description Length (117 chars)",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your meta description is 117 characters. Ideal length is 120-160.",
+              "recommendation": "Adjust to 120-160 characters for optimal display in search results.",
+              "business_impact": "A truncated description may cut off your call-to-action in search results."
+            },
+            {
+              "issue": "Missing Image Alt Text (7/10 images)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Only 30% of your images have descriptive alt text.",
+              "recommendation": "Add descriptive alt text to all images describing what they show.",
+              "business_impact": "Images without alt text can't appear in Google Image search, and your site is less accessible to visually impaired users."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 11/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 11/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 3.43,
+          "audited_at": "2026-04-06T12:07:10.303353"
+        }
       },
       {
         "id": 171,
@@ -10720,8 +11708,107 @@
         "review_count": 406,
         "source": "google_maps",
         "category": "Plumber",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:08.225198"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:08.225198",
+        "audit": {
+          "overall_score": 78,
+          "seo_score": 75,
+          "page_speed_score": 62,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (66 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 66 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"Plumber Smyrna GA | Atlanta Star Plumbing | Plumbing in Smyr\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Missing Image Alt Text (6/17 images)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Only 65% of your images have descriptive alt text.",
+              "recommendation": "Add descriptive alt text to all images describing what they show.",
+              "business_impact": "Images without alt text can't appear in Google Image search, and your site is less accessible to visually impaired users."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Page Speed Needs Improvement (Score: 62/100)",
+              "impact": "medium",
+              "category": "performance",
+              "description": "Your mobile page speed score is 62/100. There's room for improvement.",
+              "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+              "business_impact": "Improving speed from 62 to 90+ could increase your conversion rate by 10-15%."
+            }
+          ],
+          "load_time_seconds": 3.21,
+          "audited_at": "2026-04-06T12:09:19.892274"
+        }
       },
       {
         "id": 174,
@@ -10737,8 +11824,59 @@
         "review_count": 2988,
         "source": "google_maps",
         "category": "HVAC contractor",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:12.746924"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:12.746924",
+        "audit": {
+          "overall_score": 72,
+          "seo_score": 100,
+          "page_speed_score": 11,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Meta Description Length (346 chars)",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your meta description is 346 characters. Ideal length is 120-160.",
+              "recommendation": "Adjust to 120-160 characters for optimal display in search results.",
+              "business_impact": "A truncated description may cut off your call-to-action in search results."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email). You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 11/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 11/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 4.98,
+          "audited_at": "2026-04-06T12:11:34.962625"
+        }
       },
       {
         "id": 180,
@@ -14196,7 +15334,7 @@
         "review_count": 4218,
         "source": "google_maps",
         "category": "Beauty salon",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:49.536752",
         "audit": {
           "overall_score": 54,
@@ -14312,6 +15450,13 @@
           ],
           "load_time_seconds": 2.25,
           "audited_at": "2026-04-06T11:29:32.019025"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:08:54.659093",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -14436,7 +15581,7 @@
         "review_count": 1023,
         "source": "google_maps",
         "category": "Hairdresser",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:21.180943",
         "audit": {
           "overall_score": 77,
@@ -14512,6 +15657,13 @@
           ],
           "load_time_seconds": 7.23,
           "audited_at": "2026-04-06T11:35:02.108888"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:10.774978",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -14528,7 +15680,7 @@
         "review_count": 349,
         "source": "google_maps",
         "category": "Beauty salon",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:36.436182",
         "audit": {
           "overall_score": 77,
@@ -14668,6 +15820,13 @@
           ],
           "load_time_seconds": 1.25,
           "audited_at": "2026-04-06T11:36:23.079429"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:18.968351",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -14880,7 +16039,7 @@
         "review_count": 895,
         "source": "google_maps",
         "category": "Beauty salon",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:50.232057",
         "audit": {
           "overall_score": 60,
@@ -15012,6 +16171,13 @@
           ],
           "load_time_seconds": 2.63,
           "audited_at": "2026-04-06T11:39:35.857364"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:26.703267",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -15045,7 +16211,7 @@
         "review_count": 842,
         "source": "google_maps",
         "category": "Beauty salon",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:57.393315",
         "audit": {
           "overall_score": 76,
@@ -15153,6 +16319,13 @@
           ],
           "load_time_seconds": 5.31,
           "audited_at": "2026-04-06T11:41:50.060960"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:34.943313",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -15169,7 +16342,7 @@
         "review_count": 378,
         "source": "google_maps",
         "category": "Beauty salon",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:23:14.068445",
         "audit": {
           "overall_score": 76,
@@ -15261,6 +16434,13 @@
           ],
           "load_time_seconds": 2.74,
           "audited_at": "2026-04-06T11:44:18.412372"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:51.980747",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -16688,7 +17868,7 @@
   {
     "domain": "legal",
     "count": 20,
-    "avg_score": 81.1,
+    "avg_score": 77.4,
     "businesses": [
       {
         "id": 89,
@@ -16704,7 +17884,7 @@
         "review_count": 4669,
         "source": "google_maps",
         "category": "Personal injury attorney",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:21:48.293239",
         "audit": {
           "overall_score": 94,
@@ -16796,6 +17976,13 @@
           ],
           "load_time_seconds": 1.95,
           "audited_at": "2026-04-06T11:29:00.657912"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:08:50.473862",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -16812,7 +17999,7 @@
         "review_count": 1294,
         "source": "google_maps",
         "category": "Personal injury attorney",
-        "status": "audited",
+        "status": "contacted",
         "created_at": "2026-04-06T11:22:17.619630",
         "audit": {
           "overall_score": 46,
@@ -17000,6 +18187,13 @@
           ],
           "load_time_seconds": 1.69,
           "audited_at": "2026-04-06T11:33:45.400182"
+        },
+        "outreach": {
+          "status": "sent",
+          "email_sent": true,
+          "email_sent_at": "2026-04-06T12:09:06.811723",
+          "follow_up_count": 0,
+          "template_used": "initial_outreach"
         }
       },
       {
@@ -18016,8 +19210,123 @@
         "review_count": 51,
         "source": "google_maps",
         "category": "Personal injury attorney",
-        "status": "new",
-        "created_at": "2026-04-06T11:24:44.758990"
+        "status": "audited",
+        "created_at": "2026-04-06T11:24:44.758990",
+        "audit": {
+          "overall_score": 78,
+          "seo_score": 65,
+          "page_speed_score": 94,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Missing Meta Description",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+              "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+              "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+            },
+            {
+              "issue": "Missing Image Alt Text (2/4 images)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Only 50% of your images have descriptive alt text.",
+              "recommendation": "Add descriptive alt text to all images describing what they show.",
+              "business_impact": "Images without alt text can't appear in Google Image search, and your site is less accessible to visually impaired users."
+            },
+            {
+              "issue": "Missing XML Sitemap",
+              "impact": "medium",
+              "category": "seo",
+              "description": "No sitemap.xml found at /sitemap.xml. A sitemap helps Google discover all your pages.",
+              "recommendation": "Generate and submit an XML sitemap to help search engines crawl your site efficiently.",
+              "business_impact": "Without a sitemap, some of your pages may never appear in Google search results."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Social Media Links",
+              "impact": "medium",
+              "category": "marketing",
+              "description": "Your website doesn't link to any social media profiles.",
+              "recommendation": "Add links to your active social media profiles (at minimum Facebook and Instagram).",
+              "business_impact": "Social proof is critical \u2014 71% of consumers who have a positive social media experience with a brand recommend it to others."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No Customer Reviews / Testimonials Display",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+              "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+              "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            }
+          ],
+          "load_time_seconds": 3.33,
+          "audited_at": "2026-04-06T12:03:40.820256"
+        }
       },
       {
         "id": 170,
@@ -18033,8 +19342,123 @@
         "review_count": 155,
         "source": "google_maps",
         "category": "Legal services",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:05.672817"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:05.672817",
+        "audit": {
+          "overall_score": 68,
+          "seo_score": 65,
+          "page_speed_score": 56,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (20 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 20 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"Sherwood Law Group -\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Suboptimal Meta Description Length (312 chars)",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your meta description is 312 characters. Ideal length is 120-160.",
+              "recommendation": "Adjust to 120-160 characters for optimal display in search results.",
+              "business_impact": "A truncated description may cut off your call-to-action in search results."
+            },
+            {
+              "issue": "Missing H1 Heading",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your page doesn't have an H1 heading, which tells Google what your page is about.",
+              "recommendation": "Add one clear H1 heading at the top of your page that describes your main offering.",
+              "business_impact": "Without an H1, search engines struggle to understand your page topic, reducing your ranking potential."
+            },
+            {
+              "issue": "Missing Image Alt Text (12/15 images)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Only 20% of your images have descriptive alt text.",
+              "recommendation": "Add descriptive alt text to all images describing what they show.",
+              "business_impact": "Images without alt text can't appear in Google Image search, and your site is less accessible to visually impaired users."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "Broken Heading Hierarchy",
+              "impact": "low",
+              "category": "seo",
+              "description": "Your heading structure has 3 places where it skips levels (e.g., H1 \u2192 H3).",
+              "recommendation": "Restructure headings to follow a logical H1 \u2192 H2 \u2192 H3 hierarchy.",
+              "business_impact": "Poor heading structure makes your content harder for Google to understand and index properly."
+            },
+            {
+              "issue": "Page Speed Needs Improvement (Score: 56/100)",
+              "impact": "medium",
+              "category": "performance",
+              "description": "Your mobile page speed score is 56/100. There's room for improvement.",
+              "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+              "business_impact": "Improving speed from 56 to 90+ could increase your conversion rate by 10-15%."
+            }
+          ],
+          "load_time_seconds": 6.36,
+          "audited_at": "2026-04-06T12:08:40.654644"
+        }
       },
       {
         "id": 172,
@@ -18050,8 +19474,187 @@
         "review_count": 36,
         "source": "google_maps",
         "category": "Law firm",
-        "status": "new",
-        "created_at": "2026-04-06T11:25:09.847089"
+        "status": "audited",
+        "created_at": "2026-04-06T11:25:09.847089",
+        "audit": {
+          "overall_score": 42,
+          "seo_score": 20,
+          "page_speed_score": 44,
+          "has_ssl": true,
+          "is_mobile_friendly": true,
+          "issues": [
+            {
+              "issue": "Suboptimal Title Length (16 chars)",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your title tag is 16 characters. Google displays 50-60 characters in search results.",
+              "recommendation": "Adjust your title to 30-60 characters. Current: \"Just a moment...\"",
+              "business_impact": "A truncated or too-short title reduces your click-through rate by 10-20% in search results."
+            },
+            {
+              "issue": "Missing Meta Description",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+              "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+              "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+            },
+            {
+              "issue": "Missing H1 Heading",
+              "impact": "high",
+              "category": "seo",
+              "description": "Your page doesn't have an H1 heading, which tells Google what your page is about.",
+              "recommendation": "Add one clear H1 heading at the top of your page that describes your main offering.",
+              "business_impact": "Without an H1, search engines struggle to understand your page topic, reducing your ranking potential."
+            },
+            {
+              "issue": "Missing Favicon",
+              "impact": "low",
+              "category": "ux",
+              "description": "Your website doesn't have a favicon (the small icon in browser tabs).",
+              "recommendation": "Add a favicon that matches your logo. Use a 32x32 PNG or ICO file.",
+              "business_impact": "A missing favicon looks unprofessional and makes your site harder to find among open browser tabs."
+            },
+            {
+              "issue": "Missing XML Sitemap",
+              "impact": "medium",
+              "category": "seo",
+              "description": "No sitemap.xml found at /sitemap.xml. A sitemap helps Google discover all your pages.",
+              "recommendation": "Generate and submit an XML sitemap to help search engines crawl your site efficiently.",
+              "business_impact": "Without a sitemap, some of your pages may never appear in Google search results."
+            },
+            {
+              "issue": "No Analytics Tracking",
+              "impact": "high",
+              "category": "marketing",
+              "description": "No analytics tracking code detected (Google Analytics, Tag Manager, etc.).",
+              "recommendation": "Install Google Analytics (free) to track visitors, traffic sources, and popular pages.",
+              "business_impact": "You're flying blind \u2014 you have no idea how many people visit your site, where they come from, or what they do. This makes marketing impossible to optimize."
+            },
+            {
+              "issue": "No Social Media Links",
+              "impact": "medium",
+              "category": "marketing",
+              "description": "Your website doesn't link to any social media profiles.",
+              "recommendation": "Add links to your active social media profiles (at minimum Facebook and Instagram).",
+              "business_impact": "Social proof is critical \u2014 71% of consumers who have a positive social media experience with a brand recommend it to others."
+            },
+            {
+              "issue": "Missing Open Graph Tags",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site lacks Open Graph tags, which control how your links appear when shared on social media.",
+              "recommendation": "Add og:title, og:description, og:image, and og:url meta tags.",
+              "business_impact": "When someone shares your website on Facebook or LinkedIn, it shows a plain text link instead of a rich preview with image and description."
+            },
+            {
+              "issue": "No Contact Form",
+              "impact": "high",
+              "category": "ux",
+              "description": "No contact form was detected on your website.",
+              "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+              "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+            },
+            {
+              "issue": "No Live Chat / Chatbot",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+              "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+              "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+            },
+            {
+              "issue": "No Online Booking / Appointment System",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your website has no way for customers to book appointments or reserve services online.",
+              "recommendation": "Integrate an online booking system that lets customers schedule appointments directly from your website, with automated confirmations and reminders.",
+              "business_impact": "67% of customers prefer booking online over calling. Without it, you're losing bookings to competitors who make it easy. An automated system also eliminates no-shows with SMS/email reminders."
+            },
+            {
+              "issue": "No Online Payment System",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+              "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+              "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront."
+            },
+            {
+              "issue": "No Email Marketing / Newsletter Signup",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+              "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+              "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+            },
+            {
+              "issue": "No Customer Reviews / Testimonials Display",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+              "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+              "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+            },
+            {
+              "issue": "No WhatsApp Business Integration",
+              "impact": "medium",
+              "category": "business_tools",
+              "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+              "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+              "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+            },
+            {
+              "issue": "No Google Maps Embed",
+              "impact": "low",
+              "category": "business_tools",
+              "description": "Your website doesn't have an embedded Google Map showing your location.",
+              "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+              "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+            },
+            {
+              "issue": "Missing Business Automation Tools",
+              "impact": "high",
+              "category": "business_tools",
+              "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), self-service booking portal, automated email marketing campaigns. You're likely handling these manually or not at all.",
+              "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+              "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+            },
+            {
+              "issue": "No Structured Data / Schema Markup",
+              "impact": "medium",
+              "category": "seo",
+              "description": "Your site has no structured data (Schema.org markup), which helps Google show rich results.",
+              "recommendation": "Add LocalBusiness schema markup with your name, address, phone, hours, and reviews.",
+              "business_impact": "Businesses with schema markup can get rich snippets in Google (stars, hours, price range), which increase click-through rates by 20-30%."
+            },
+            {
+              "issue": "Missing Content-Security-Policy Header",
+              "impact": "low",
+              "category": "security",
+              "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+              "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+              "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+            },
+            {
+              "issue": "No Skip Navigation Link",
+              "impact": "low",
+              "category": "accessibility",
+              "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+              "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+              "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+            },
+            {
+              "issue": "Very Slow Page Speed (Score: 44/100)",
+              "impact": "high",
+              "category": "performance",
+              "description": "Your mobile page speed score is 44/100. Google considers anything below 50 as poor.",
+              "recommendation": "Optimize images, enable caching, minimize JavaScript, and consider a faster hosting provider.",
+              "business_impact": "53% of mobile users abandon a site that takes over 3 seconds to load. A slow site is costing you over half your visitors."
+            }
+          ],
+          "load_time_seconds": 3.25,
+          "audited_at": "2026-04-06T12:09:52.022326"
+        }
       },
       {
         "id": 175,
