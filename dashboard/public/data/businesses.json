@@ -24270,7 +24270,7 @@
         }
       ],
       "load_time_seconds": null,
-      "audited_at": "2026-04-06T12:23:30.785128"
+      "audited_at": "2026-04-06T12:23:30.961102"
     }
   },
   {
@@ -24287,8 +24287,27 @@
     "review_count": 124,
     "source": "google_maps",
     "category": "Chiropractor",
-    "status": "new",
-    "created_at": "2026-04-06T11:29:42.595761"
+    "status": "audited",
+    "created_at": "2026-04-06T11:29:42.595761",
+    "audit": {
+      "overall_score": 0,
+      "seo_score": null,
+      "page_speed_score": null,
+      "has_ssl": null,
+      "is_mobile_friendly": null,
+      "issues": [
+        {
+          "issue": "Website Unreachable",
+          "impact": "high",
+          "category": "technical",
+          "description": "Your website could not be loaded: HTTPSConnectionPool(host='www.campuschiropractic.com.au', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.campuschiropractic.com.au', port=443) at 0x10a65e5d0>, 'Connection to www.campuschiropractic.com.au timed out. (connect timeout=15)'))",
+          "recommendation": "Check your hosting and DNS settings. Make sure your website is online.",
+          "business_impact": "Every minute your website is down, you're losing potential customers who can't find or contact you."
+        }
+      ],
+      "load_time_seconds": null,
+      "audited_at": "2026-04-06T12:23:45.972221"
+    }
   },
   {
     "id": 200,
@@ -24304,8 +24323,83 @@
     "review_count": 13,
     "source": "google_maps",
     "category": "Chiropractor",
-    "status": "new",
-    "created_at": "2026-04-06T11:29:52.263929"
+    "status": "audited",
+    "created_at": "2026-04-06T11:29:52.263929",
+    "audit": {
+      "overall_score": 84,
+      "seo_score": 100,
+      "page_speed_score": 56,
+      "has_ssl": true,
+      "is_mobile_friendly": true,
+      "issues": [
+        {
+          "issue": "No Contact Form",
+          "impact": "high",
+          "category": "ux",
+          "description": "No contact form was detected on your website.",
+          "recommendation": "Add a simple contact form on your homepage or a dedicated contact page.",
+          "business_impact": "Businesses with contact forms convert 2-3x more website visitors into leads than those with just a phone number or email address."
+        },
+        {
+          "issue": "No Live Chat / Chatbot",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+          "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+          "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+        },
+        {
+          "issue": "No Customer Reviews / Testimonials Display",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+          "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+          "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+        },
+        {
+          "issue": "No WhatsApp Business Integration",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+          "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+          "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+        },
+        {
+          "issue": "No Google Maps Embed",
+          "impact": "low",
+          "category": "business_tools",
+          "description": "Your website doesn't have an embedded Google Map showing your location.",
+          "recommendation": "Embed a Google Map on your contact page so customers can easily find your physical location and get directions.",
+          "business_impact": "86% of people look up the location of a business on Google Maps. An embedded map reduces friction and drives more foot traffic."
+        },
+        {
+          "issue": "Missing Business Automation Tools",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email). You're likely handling these manually or not at all.",
+          "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+          "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+        },
+        {
+          "issue": "Missing Content-Security-Policy Header",
+          "impact": "low",
+          "category": "security",
+          "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+          "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+          "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+        },
+        {
+          "issue": "Page Speed Needs Improvement (Score: 56/100)",
+          "impact": "medium",
+          "category": "performance",
+          "description": "Your mobile page speed score is 56/100. There's room for improvement.",
+          "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+          "business_impact": "Improving speed from 56 to 90+ could increase your conversion rate by 10-15%."
+        }
+      ],
+      "load_time_seconds": 3.3,
+      "audited_at": "2026-04-06T12:24:12.544504"
+    }
   },
   {
     "id": 201,
@@ -24321,8 +24415,27 @@
     "review_count": 462,
     "source": "google_maps",
     "category": "Chiropractor",
-    "status": "new",
-    "created_at": "2026-04-06T11:31:14.840486"
+    "status": "audited",
+    "created_at": "2026-04-06T11:31:14.840486",
+    "audit": {
+      "overall_score": 0,
+      "seo_score": null,
+      "page_speed_score": null,
+      "has_ssl": null,
+      "is_mobile_friendly": null,
+      "issues": [
+        {
+          "issue": "Website Unreachable",
+          "impact": "high",
+          "category": "technical",
+          "description": "Your website could not be loaded: HTTPSConnectionPool(host='www.thephysicaltherapycentre.com.au', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.thephysicaltherapycentre.com.au', port=443) at 0x10a65dd10>, 'Connection to www.thephysicaltherapycentre.com.au timed out. (connect timeout=15)'))",
+          "recommendation": "Check your hosting and DNS settings. Make sure your website is online.",
+          "business_impact": "Every minute your website is down, you're losing potential customers who can't find or contact you."
+        }
+      ],
+      "load_time_seconds": null,
+      "audited_at": "2026-04-06T12:24:27.557941"
+    }
   },
   {
     "id": 202,
@@ -24338,7 +24451,90 @@
     "review_count": 52,
     "source": "google_maps",
     "category": "Chiropractor",
-    "status": "new",
-    "created_at": "2026-04-06T11:31:25.036521"
+    "status": "audited",
+    "created_at": "2026-04-06T11:31:25.036521",
+    "audit": {
+      "overall_score": 71,
+      "seo_score": 75,
+      "page_speed_score": 57,
+      "has_ssl": true,
+      "is_mobile_friendly": true,
+      "issues": [
+        {
+          "issue": "Missing Meta Description",
+          "impact": "high",
+          "category": "seo",
+          "description": "Your website doesn't have a meta description tag. This is the snippet shown in Google search results.",
+          "recommendation": "Add a compelling meta description (120-160 characters) that describes your business and includes relevant keywords.",
+          "business_impact": "You're likely losing 20-30% of potential clicks from Google because searchers can't see what your business offers."
+        },
+        {
+          "issue": "Missing Image Alt Text (4/5 images)",
+          "impact": "medium",
+          "category": "seo",
+          "description": "Only 20% of your images have descriptive alt text.",
+          "recommendation": "Add descriptive alt text to all images describing what they show.",
+          "business_impact": "Images without alt text can't appear in Google Image search, and your site is less accessible to visually impaired users."
+        },
+        {
+          "issue": "No Live Chat / Chatbot",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+          "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+          "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+        },
+        {
+          "issue": "No Online Payment System",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website doesn't offer online payments. Customers can't pay for services or products through your site.",
+          "recommendation": "Add a secure online payment system (Stripe, PayPal, or Square) so customers can pay deposits, invoices, or purchase services directly.",
+          "business_impact": "Businesses that accept online payments see 30% faster payment collection and reduce no-shows by collecting deposits upfront."
+        },
+        {
+          "issue": "No Email Marketing / Newsletter Signup",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+          "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+          "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+        },
+        {
+          "issue": "No Customer Reviews / Testimonials Display",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website doesn't showcase customer reviews or testimonials. There's no social proof for new visitors.",
+          "recommendation": "Add a reviews section that displays Google Reviews, Yelp reviews, or customer testimonials directly on your website with an auto-sync widget.",
+          "business_impact": "92% of consumers read online reviews before buying. Displaying reviews on your website increases conversion by 270%. You're leaving massive trust-building potential on the table."
+        },
+        {
+          "issue": "No WhatsApp Business Integration",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+          "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+          "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+        },
+        {
+          "issue": "Missing Business Automation Tools",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), automated email marketing campaigns. You're likely handling these manually or not at all.",
+          "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+          "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+        },
+        {
+          "issue": "Page Speed Needs Improvement (Score: 57/100)",
+          "impact": "medium",
+          "category": "performance",
+          "description": "Your mobile page speed score is 57/100. There's room for improvement.",
+          "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+          "business_impact": "Improving speed from 57 to 90+ could increase your conversion rate by 10-15%."
+        }
+      ],
+      "load_time_seconds": 7.21,
+      "audited_at": "2026-04-06T12:24:48.866011"
+    }
   }
 ]
