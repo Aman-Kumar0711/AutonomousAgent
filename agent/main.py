@@ -362,6 +362,9 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
         border_style="bold cyan",
     ))
 
+    # Track this run's businesses
+    run_biz_ids: list[int] = []
+
     # Step 1: Scrape
     console.print("\n[bold cyan]Step 1/4: Scraping[/bold cyan]")
     maps_scraper = GoogleMapsScraper()
@@ -373,16 +376,19 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
     saved = 0
     for biz_data in results:
         enriched = search_scraper.enrich_business(biz_data)
-        db.add_business(enriched)
-        saved += 1
+        biz = db.add_business(enriched)
+        if biz:
+            run_biz_ids.append(biz.id)
+            saved += 1
 
     console.print(f"  [green]Saved {saved} businesses[/green]")
 
-    # Step 2: Audit
+    # Step 2: Audit (only this run's businesses)
     console.print("\n[bold cyan]Step 2/4: Auditing websites[/bold cyan]")
     analyzer = WebsiteAnalyzer()
-    to_audit = db.get_businesses_without_audit()
+    to_audit = [b for b in db.get_businesses_without_audit() if b.id in run_biz_ids]
 
+    audited = 0
     with Progress(
         SpinnerColumn(),
         TextColumn("[progress.description]{task.description}"),
@@ -396,26 +402,34 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
                 try:
                     audit_data = analyzer.analyze(biz.website)
                     db.add_audit(biz.id, audit_data)
+                    audited += 1
                 except Exception as e:
                     console.print(f"  [red]Error: {biz.name}: {e}[/red]")
             progress.advance(task)
+
+    console.print(f"  [green]Audited {audited} websites[/green]")
 
     # Step 3: Export & Deploy
     console.print("\n[bold cyan]Step 3/4: Deploying dashboard[/bold cyan]")
     _deploy_dashboard()
 
-    # Step 4: Outreach
+    # Step 4: Outreach (only this run's businesses)
     console.print("\n[bold cyan]Step 4/4: Outreach[/bold cyan]")
-    eligible = db.get_businesses_without_outreach()
+    eligible = [b for b in db.get_businesses_without_outreach() if b.id in run_biz_ids]
     if eligible:
         console.print(f"  [yellow]{len(eligible)} businesses ready for outreach.[/yellow]")
         if click.confirm("  Send outreach emails now?"):
             sender = EmailSender()
             sent = 0
+            skipped_no_email = 0
+            skipped_no_audit = 0
             for biz in eligible:
                 audit_record = db.get_audit(biz.id)
                 if not audit_record:
-                    console.print(f"  [yellow]Skipping {biz.name}: no audit record[/yellow]")
+                    skipped_no_audit += 1
+                    continue
+                if not biz.email:
+                    skipped_no_email += 1
                     continue
                 portfolio_url = generate_portfolio_url(biz.id, biz.name)
                 success = sender.send_outreach(biz, audit_record, portfolio_url)
@@ -432,20 +446,23 @@ def run(business_type: str, city: str, state: str, country: str, limit: int):
                     db.add_outreach(biz.id, outreach_data)
                     sent += 1
             console.print(f"  [green]Sent {sent} emails[/green]")
+            if skipped_no_email:
+                console.print(f"  [yellow]Skipped {skipped_no_email} (no email found)[/yellow]")
+            if skipped_no_audit:
+                console.print(f"  [yellow]Skipped {skipped_no_audit} (no audit)[/yellow]")
         else:
             console.print("  [dim]Skipped outreach.[/dim]")
     else:
         console.print("  [dim]No businesses eligible for outreach.[/dim]")
 
-    # Summary
+    # Summary — this run only
     console.print()
-    data = db.get_stats()
+    run_sent = sum(1 for bid in run_biz_ids if db.get_outreach(bid))
+    run_emails_found = sum(1 for bid in run_biz_ids if (b := db.get_business(bid)) and b.email)
     console.print(Panel(
-        f"[bold green]Pipeline Complete[/bold green]\n"
-        f"Businesses: {data['total_leads']} | "
-        f"Audited: {data['total_audited']} | "
-        f"Contacted: {data['total_contacted']} | "
-        f"Avg Score: {data['average_score']}",
+        f"[bold green]Pipeline Complete — {business_type} in {location}[/bold green]\n"
+        f"Scraped: {saved} | Audited: {audited} | "
+        f"Emails Found: {run_emails_found} | Emails Sent: {run_sent}",
         border_style="green",
     ))
 

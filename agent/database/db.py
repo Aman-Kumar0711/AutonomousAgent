@@ -48,12 +48,14 @@ class DatabaseManager:
                 existing.updated_at = datetime.now(timezone.utc)
                 session.flush()
                 session.refresh(existing)
+                session.expunge(existing)
                 return existing
 
             business = Business(**data)
             session.add(business)
             session.flush()
             session.refresh(business)
+            session.expunge(business)
             return business
 
     def get_business(self, business_id: int) -> Business | None:
@@ -148,6 +150,17 @@ class DatabaseManager:
 
             session.flush()
             session.refresh(outreach)
+            return outreach
+
+    def get_outreach(self, business_id: int) -> OutreachRecord | None:
+        with self.get_session() as session:
+            outreach = (
+                session.query(OutreachRecord)
+                .filter(OutreachRecord.business_id == business_id)
+                .first()
+            )
+            if outreach:
+                session.expunge(outreach)
             return outreach
 
     def update_outreach_status(self, outreach_id: int, status: str) -> None:
