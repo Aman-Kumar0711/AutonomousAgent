@@ -23385,8 +23385,8 @@
           "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
         }
       ],
-      "load_time_seconds": 6.33,
-      "audited_at": "2026-04-06T12:18:59.382308"
+      "load_time_seconds": 12.17,
+      "audited_at": "2026-04-06T12:19:01.083521"
     }
   },
   {
@@ -23403,8 +23403,75 @@
     "review_count": 118,
     "source": "google_maps",
     "category": "Plumber",
-    "status": "new",
-    "created_at": "2026-04-06T11:26:11.682892"
+    "status": "audited",
+    "created_at": "2026-04-06T11:26:11.682892",
+    "audit": {
+      "overall_score": 96,
+      "seo_score": 100,
+      "page_speed_score": 84,
+      "has_ssl": true,
+      "is_mobile_friendly": true,
+      "issues": [
+        {
+          "issue": "No Live Chat / Chatbot",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your website has no live chat or chatbot. Visitors with questions have no instant way to get answers.",
+          "recommendation": "Add an AI chatbot or live chat widget that can answer FAQs, capture leads, and book appointments 24/7.",
+          "business_impact": "Websites with live chat see 38% higher conversion rates. A chatbot works 24/7, capturing leads even when you're closed \u2014 most businesses lose 50%+ of potential customers who leave without contacting."
+        },
+        {
+          "issue": "No Email Marketing / Newsletter Signup",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website has no newsletter signup or email capture form. You're not building a customer email list.",
+          "recommendation": "Add an email signup form offering something valuable (discount, free guide, tips) to capture visitor emails for marketing.",
+          "business_impact": "Email marketing returns $36 for every $1 spent. Without an email list, you have no way to re-engage past visitors or announce promotions."
+        },
+        {
+          "issue": "No WhatsApp Business Integration",
+          "impact": "medium",
+          "category": "business_tools",
+          "description": "Your website has no WhatsApp chat button. Many customers prefer messaging over calling or emailing.",
+          "recommendation": "Add a WhatsApp Business chat button so customers can message you instantly with one tap, especially on mobile.",
+          "business_impact": "WhatsApp has 2 billion users worldwide. Adding a WhatsApp button increases customer inquiries by 27% \u2014 it's the most natural communication channel for many customers."
+        },
+        {
+          "issue": "Missing Business Automation Tools",
+          "impact": "high",
+          "category": "business_tools",
+          "description": "Your business lacks key automation: CRM system for customer management, automated appointment reminders (SMS/Email), automated email marketing campaigns. You're likely handling these manually or not at all.",
+          "recommendation": "I can build a custom automation suite \u2014 automated reminders to reduce no-shows, a CRM dashboard to track customers, and email campaigns that run on autopilot.",
+          "business_impact": "Businesses using automation save 6+ hours per week and reduce no-shows by 40%. Manual processes cost you time, money, and customers who fall through the cracks."
+        },
+        {
+          "issue": "Missing Content-Security-Policy Header",
+          "impact": "low",
+          "category": "security",
+          "description": "Your site lacks a Content-Security-Policy header, which protects against XSS attacks.",
+          "recommendation": "Add a Content-Security-Policy header to your server configuration.",
+          "business_impact": "Your website is more vulnerable to cross-site scripting attacks that could steal customer data."
+        },
+        {
+          "issue": "No Skip Navigation Link",
+          "impact": "low",
+          "category": "accessibility",
+          "description": "Your site doesn't have a 'skip to content' link for keyboard users.",
+          "recommendation": "Add a visually hidden skip link at the top of the page that jumps to main content.",
+          "business_impact": "Users relying on keyboards or assistive technology will have a frustrating experience navigating your site."
+        },
+        {
+          "issue": "Page Speed Needs Improvement (Score: 84/100)",
+          "impact": "medium",
+          "category": "performance",
+          "description": "Your mobile page speed score is 84/100. There's room for improvement.",
+          "recommendation": "Optimize your largest images, defer non-critical JavaScript, and leverage browser caching.",
+          "business_impact": "Improving speed from 84 to 90+ could increase your conversion rate by 10-15%."
+        }
+      ],
+      "load_time_seconds": 1.82,
+      "audited_at": "2026-04-06T12:19:19.904644"
+    }
   },
   {
     "id": 189,
