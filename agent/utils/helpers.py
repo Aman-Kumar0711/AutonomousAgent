@@ -92,13 +92,35 @@ def clean_phone(phone: str) -> str:
     return phone.strip()
 
 
+_FAKE_EMAIL_PATTERNS = re.compile(
+    r"@\d+x\.\w+$|"          # logo@2x.png, icon@3x.png
+    r"\.(png|jpg|jpeg|gif|svg|webp|ico|bmp|tiff|css|js|map|woff|woff2|ttf|eot)$|"  # file extensions
+    r"^(no-?reply|noreply|mailer-daemon|postmaster|webmaster|admin@localhost)",     # system emails
+    re.IGNORECASE,
+)
+
+_JUNK_LOCAL_PARTS = {
+    "name", "email", "your", "info@example", "user", "test",
+    "username", "yourname", "youremail", "enter",
+}
+
+
 def clean_email(email: str) -> str | None:
     if not email:
         return None
     email = email.strip().lower()
-    if _EMAIL_RE.match(email):
-        return email
-    return None
+    if not _EMAIL_RE.match(email):
+        return None
+    if _FAKE_EMAIL_PATTERNS.search(email):
+        return None
+    local_part = email.split("@")[0]
+    if local_part in _JUNK_LOCAL_PARTS:
+        return None
+    # Reject if TLD looks like a file extension or is too short
+    tld = email.rsplit(".", 1)[-1]
+    if len(tld) > 10 or tld in ("png", "jpg", "jpeg", "gif", "svg", "webp", "css", "js"):
+        return None
+    return email
 
 
 def slugify(text: str) -> str:

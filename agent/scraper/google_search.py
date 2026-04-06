@@ -127,7 +127,16 @@ class GoogleSearchScraper:
                 if resp.status_code != 200:
                     continue
 
-                found = EMAIL_REGEX.findall(resp.text)
+                # Extract emails from visible text only, not from HTML attributes/src/href to images
+                soup = BeautifulSoup(resp.text, "html.parser")
+                # Remove script, style, and image tags to avoid false matches
+                for tag in soup(["script", "style", "img", "link", "source"]):
+                    tag.decompose()
+                text_content = soup.get_text() + " " + " ".join(
+                    a.get("href", "") for a in soup.find_all("a", href=True)
+                )
+
+                found = EMAIL_REGEX.findall(text_content)
                 for email in found:
                     email_lower = email.lower()
                     email_domain = email_lower.split("@")[1]
