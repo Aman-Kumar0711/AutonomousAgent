@@ -22,7 +22,7 @@ from .templates import render_follow_up_1, render_follow_up_2, render_initial_ou
 
 console = Console()
 
-MAX_EMAILS_PER_HOUR = 20
+MAX_EMAILS_PER_HOUR = 80
 
 
 class EmailSender:

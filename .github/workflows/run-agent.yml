@@ -83,6 +83,7 @@ jobs:
           YOUR_NAME=Aman Kumar
           YOUR_EMAIL=${{ secrets.SMTP_USER }}
           PORTFOLIO_BASE_URL=${{ secrets.PORTFOLIO_BASE_URL }}
+          PAGESPEED_API_KEY=${{ secrets.PAGESPEED_API_KEY }}
           ENVEOF
       
       - name: Download existing database
